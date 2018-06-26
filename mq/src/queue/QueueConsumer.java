@@ -7,6 +7,7 @@ import javax.jms.*;
 public class QueueConsumer {
 
    public  static void listener(){
+
        String cluster ="failover:(tcp://127.0.0.1:61616,tcp://127.0.0.1:61618)";
        //连接工厂
        ActiveMQConnectionFactory factory =new ActiveMQConnectionFactory(cluster);

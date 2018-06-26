@@ -19,6 +19,7 @@ public class QueueProducer {
             Session session = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
             //创建队列
             Queue queue = session.createQueue("first");
+
             //创建生产者
             MessageProducer producer = session.createProducer(queue);
             //添加消息
